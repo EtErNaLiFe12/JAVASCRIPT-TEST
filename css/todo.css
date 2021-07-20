@@ -1,19 +1,35 @@
-.to-do-container {
+body {
   position: relative;
+}
+.to-do-container {
+  position: absolute;
   width: 1000px;
-  height: 600px;
+  height: 200px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
-  border: 3px solid #fb5849;
+  margin: 0 auto;
+  border: 3px dashed rgba(126, 120, 120,0.5);
+}
+.to-do-container h1 {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  margin-top: 5px;
+  left: 50%;
+  transform: translate(-50%);
+  text-transform: uppercase;
+  color: #fb5849;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 .to-do-container .to-do {
   position: absolute;
   width: 300px;
   height: 50px;
-  top: 55px;
+  top: 90px;
   left: 100px;
   color: #fff;
   font-size: 25px;
@@ -21,6 +37,9 @@
   border: 1px solid #fb5849;
   border-radius: 10px;
   background-color: #fb5849;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 .to-do span,
 .to-do-del span {
@@ -32,40 +51,73 @@
   position: absolute;
   width: 300px;
   height: 50px;
-  top: 55px;
+  top: 90px;
   right: 100px;
-  color: #fb5849;
+  color: #fff;
   font-size: 20px;
   text-transform: uppercase;
   border: 1px solid #fb5849;
   border-radius: 10px;
+  background-color: #fb5849;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 .to-do-container .list {
   position: absolute;
-  bottom: 0;
+  top: 200px;
   width: 1000px;
-  height: 450px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  border: 3px dashed rgba(126, 120, 120,0.5);
 }
-.to-do-container .list ol {
-  padding: 10px;
+.to-do-container .list h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fb5849;
+  letter-spacing: 3px;
 }
-.to-do-container .list ol li {
+.to-do-container .list ul {
+  padding: 0;
+}
+
+.to-do-container .list ul .list-style {
+  position: relative;
   font-size: 20px;
   font-weight: 700;
   list-style: none;
   color: #fb5849;
   letter-spacing: 3px;
   line-height: 40px;
-
+  border-bottom: 1px dashed #fb5849;
+  margin: 10px;
+  line-height: 40px;
+}
+.to-do-container .list ul li .btns {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #fb5849;
+  border-radius: 5px;
+  background-color: #fb5849;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
 }
 .to-do-container input {
   position: absolute;
   width: 800px;
   height: 30px;
-  top: 5px;
+  top: 50px;
   left: 0;
   right: 0;
   margin: auto;
   border: 1px solid #fb5849;
   border-radius: 10px;
+  text-align: center;
 }
