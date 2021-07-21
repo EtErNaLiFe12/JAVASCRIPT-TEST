@@ -11,6 +11,7 @@ body {
   right: 0;
   margin: 0 auto;
   border: 3px dashed rgba(126, 120, 120,0.5);
+  border-radius: 20px 20px 0 0;
 }
 .to-do-container h1 {
   position: absolute;
@@ -41,6 +42,9 @@ body {
   user-select: none;
   -webkit-user-drag: none;
 }
+.to-do-container .to-do:hover {
+  background-color: #e07a70;
+}
 .to-do span,
 .to-do-del span {
   font-size: 20px;
@@ -63,6 +67,9 @@ body {
   user-select: none;
   -webkit-user-drag: none;
 }
+.to-do-container .to-do-del:hover {
+  background-color: #e07a70;
+}
 .to-do-container .list {
   position: absolute;
   top: 200px;
@@ -71,6 +78,7 @@ body {
   transform: translate(-50%);
   text-align: center;
   border: 3px dashed rgba(126, 120, 120,0.5);
+  border-radius: 0 0 20px 20px;
 }
 .to-do-container .list h2 {
   font-size: 20px;
@@ -108,6 +116,9 @@ body {
   color: #fff;
   font-weight: 700;
   font-size: 16px;
+}
+.to-do-container .list ul li .btns:hover {
+  background-color: #e07a70;
 }
 .to-do-container input {
   position: absolute;
