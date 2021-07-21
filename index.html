@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/todo.css">
   <script defer src="./js/list.js"></script>
+  <!-- <script defer src="./js/list1.js"></script> -->
   <title>Slide show</title>
 </head>
 <body>
   <div class="to-do-container">
     <h1>to-do-list</h1>
-    <input type="text" id="input" placeholder="내용을 입력하세요">
+    <form class="js-toDoForm">
+      <input type="text" id="input" placeholder="내용을 입력하세요">
+    </form>
     <button class="to-do" data-type="add"><span>to-do-list add</span></button>
     <button class="to-do-del" data-type="del"><span>to-do-list delete</span></button>
     <div class="list">
