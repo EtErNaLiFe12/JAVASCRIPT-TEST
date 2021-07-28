@@ -1,0 +1,125 @@
+.tab-container {
+  position: relative;
+  width: 1500px;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+}
+.tab-container .tab-menu {
+  width: 100px;
+  height: 30px;
+  background-color: #fb5849;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 30px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.tab-container .tab-menu:nth-child(2) {
+  background-color: rgba(251, 88, 73, .4);
+}
+.tab-container .tab-menu:nth-child(3) {
+  background-color: rgba(251, 88, 73, .4);
+}
+.main-container {
+  position: relative;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1500px;
+  height: 500px;
+  box-sizing: border-box;
+}
+.main-container .tab-contents {
+  position: absolute;
+  width: 1500px;
+  height: 500px;
+}
+.main-container .tab-contents .tab1 {
+  position: absolute;
+  width: 1500px;
+  height: 500px;
+  background-color: #fb5849;
+} 
+.main-container .tab-contents .tab1 ul {
+  position: absolute;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-container .tab-contents .tab1 ul li {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+  margin: 30px;
+}
+.main-container .tab-contents .tab2 {
+  position: absolute;
+  width: 1500px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #fb5849;
+  display: none;
+}
+.main-container .tab-contents .tab2 ul {
+  position: absolute;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-container .tab-contents .tab2 ul li {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+  margin: 30px;
+}
+.main-container .tab-contents .tab3 {
+  position: absolute;
+  width: 1500px;
+  height: 500px;
+  background-color: #fb5849;
+  display: none;
+}
+.main-container .tab-contents .tab3 ul {
+  position: absolute;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-container .tab-contents .tab3 ul li {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+  margin: 30px;
+} 
