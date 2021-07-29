@@ -31,13 +31,56 @@
 
 // --------------------------------------------------------------
 
+// const tabMem = document.querySelectorAll('.tab-menu');
+// const tb1 = document.querySelector('.tab1');
+// const tb2 = document.querySelector('.tab2');
+// const tb3 = document.querySelector('.tab3');
+
+// for(i = 0; i < tabMem.length; i++) {
+//   tabMem[i].addEventListener('click', function (e) {
+//     const idEl = e.target.id;
+//     console.log(idEl);
+//     switch (idEl) {
+
+//       case 'tab1':
+//         tb1.style.display = "block";
+//         tb2.style.display = "none";
+//         tb3.style.display = "none";
+//         tabMem[0].style.backgroundColor = "#fb5849";
+//         tabMem[1].style.backgroundColor = "rgba(251, 88, 73, .4)";
+//         tabMem[2].style.backgroundColor = "rgba(251, 88, 73, .4)";
+//         break;
+
+//       case 'tab2':
+//         tb1.style.display = "none";
+//         tb2.style.display = "block";
+//         tb3.style.display = "none";
+//         tabMem[0].style.backgroundColor = "rgba(251, 88, 73, .4)";
+//         tabMem[1].style.backgroundColor = "#fb5849";
+//         tabMem[2].style.backgroundColor = "rgba(251, 88, 73, .4)";
+//         break;
+
+//       case 'tab3':
+//         tb2.style.display ="none";
+//         tb3.style.display = "block";
+//         tabMem[0].style.backgroundColor = "rgba(251, 88, 73, .4)";
+//         tabMem[1].style.backgroundColor = "rgba(251, 88, 73, .4)";
+//         tabMem[2].style.backgroundColor = "#fb5849";
+//         break;    
+
+//     }
+//   })
+// }
+
+// -------------------------------------------------------------------------
+
 const tabMem = document.querySelectorAll('.tab-menu');
 const tb1 = document.querySelector('.tab1');
 const tb2 = document.querySelector('.tab2');
 const tb3 = document.querySelector('.tab3');
 
-for(i = 0; i < tabMem.length; i++) {
-  tabMem[i].addEventListener('click', function (e) {
+tabMem.forEach(tab => {
+  tab.addEventListener('click', function (e) {
     const idEl = e.target.id;
     console.log(idEl);
     switch (idEl) {
@@ -70,20 +113,18 @@ for(i = 0; i < tabMem.length; i++) {
 
     }
   })
-}
+})
 
 // -------------------------------------------------------------------------
 
-// const tabMem = document.querySelectorAll('.tab-menu');
-// const tabEl = document.querySelectorAll('.tab-contents .tab');
-
-
-// for(i = 0; i < tabMem.length; i++) {
-//   tabMem[i].addEventListener('click', function () {
-//    for(j = 0; i < tabMem.length; j++) {
-//     tabEl[j].classList.remove('isClicked');
-
-//    }
- 
-//   })
-// }
+const tabEl = document.querySelectorAll('.tab_menu .list li');
+for(let i = 0; i < tabEl.length; i++) {
+  tabEl[i].querySelector('.btn').addEventListener('click', function (e) {
+    e.preventDefault();
+   for(let j = 0; j < tabEl.length; j++) {
+    tabEl[j].classList.remove('is_on');
+   }
+   this.parentNode.classList.add('is_on');
+   console.log(this);
+  })
+}
